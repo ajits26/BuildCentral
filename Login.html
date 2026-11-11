@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | LaunchCentral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" defer></script>
+    <script src="supabase.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="site-name"><img src="favicon.svg" class="brand-mark" alt="">Launch<span>Central</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="AboutRocketry.html">About Rocketry</a>
+            <a href="Communities.html">Communities</a>
+            <a href="Forum.html">Forum</a>
+            <a href="Events.html">Events</a>
+            <a href="Messages.html">Messages</a>
+            <a href="Login.html" id="authLink">Log In / Sign Up</a>
+        </div>
+    </nav>
+
+    <main class="login-page">
+        <div class="login-card">
+            <h1>Welcome Back</h1>
+            <p class="login-subtitle">Log in to LaunchCentral</p>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" required>
+                </div>
+
+                <button type="submit" class="login-button">Log In</button>
+                <p id="loginMessage" aria-live="polite"></p>
+            </form>
+            <p class="signup-text"><a href="ForgotPassword.html">Forgot your password?</a></p>
+
+            <p class="signup-text">
+                New here? <a href="Register.html">Create an account</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>
